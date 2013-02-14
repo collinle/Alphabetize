@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> Alphabetize </title>
+<link rel="stylesheet" type='text/css' href="stylesheet.css"/>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type='text/javascript' src='Alpha.js'></script>
+<script type='text/javascript' src='letters.js'></script>
+</head>
+
+<body>
+<div class='box'>
+  <p class='title'>Alphabet Program Key Generator</p>
+</div>
+
+<div class='box'>
+<p class='title'>Challenge Parameters</p>
+<p>
+<a href="http://redd.it/178vsz">Click here</a> for the exact parameters of the challenge. 
+</p>
+<p>
+This challenge uses encryption keys to map each letter of a word to a different letter of the alphabet. For example, if our key was 'czylkhwedjvuinxfbspatmgroq', the letter 'a' would be mapped to 'c', 'b' would be mapped to 'z', and so on. An encryption key's score is the number of words from a list of 7260 six-letter words that the key maps to an alphabetized string. The goal of the challenge is to find the key with the highest score. Click the button to start the program.
+</p>
+</div>
+
+<center>
+<button id='begin'>
+Click to start program
+</button>
+
+<div class='box' id='explain'>
+The program initially produces a random reordering of the 26 letters of the alphabet as the initial encryption key. Pressing 'Next step' instructs the program to make small rearrangements of the current key until one with a better score is found. The table displays the current key, the score using the current key, and the number of letter switches between the previous key and the current one. Keep pressing 'Next step' to generate better keys! 
+</div>
+
+<table>
+<tbody>
+<tr>
+  <td><h3>Current Encryption Key</h3></td>
+  <td><h3>Score</h3></td>
+  <td><h3>Differences</h3></td>
+  <td id="noborder"></td>
+</tbody>
+</table>
+
+</center>
+
+<footer>
+&copy Lee Collins 2013
+</footer>
+
+</body>
+
+</html>
